@@ -17,19 +17,17 @@ const DoughnutChart = ({ accounts }: DoughnutChartProps) => {
     labels: ["EuroBank", "NBG", "Piraus"],
   };
   return (
-    <div>
-      <Doughnut
-        data={data}
-        options={{
-          cutout: "60%",
-          plugins: {
-            legend: {
-              display: false,
-            },
+    <Doughnut
+      data={data}
+      options={{
+        cutout: "60%",
+        plugins: {
+          legend: {
+            display: false,
           },
-        }}
-      />
-    </div>
+        },
+      }}
+    />
   );
 };
 
